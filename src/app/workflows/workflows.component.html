@@ -1,0 +1,43 @@
+
+<div class="workflow" *ngFor="let workflow of workflows">
+    <div class="workflowDetails">
+        <div class="field">
+            <div class="first-label">
+                <b>Work Flow:</b>&nbsp;
+            </div>
+            <div class="workflowDueDate">
+                <span class="workflowWorkflow">{{workflow.workflow}}</span>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                From:&nbsp;
+            </div>
+            <div class="workflowDueDate">
+                {{workflow.from}}
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                To:&nbsp;
+            </div>
+            <div class="workflowDueDate">
+                {{workflow.to}}
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                Due Date:&nbsp;
+            </div>
+            <div class="workflowDueDate">
+                <span class="workflowDueDateText">{{workflow.dueDate}}</span>
+            </div>
+        </div>
+    </div>
+    <div [ngClass]="{'workflowStatus': true, 'lowRiskStatus': workflow.status === 'Low Risk', 'incompleteStatus': workflow.status === 'Incomplete', 'needsReviewStatus': workflow.status === 'Needs Review' }">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+            <circle cx="6" cy="6.5" r="6" [attr.fill]=workflow.statusFill/>
+          </svg>
+        {{workflow.status}}
+    </div>
+</div>

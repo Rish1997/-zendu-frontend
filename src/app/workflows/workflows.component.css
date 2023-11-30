@@ -1,0 +1,81 @@
+.workflow {
+    border-radius: 4px;
+    border: 1px solid var(--color-black-borders, #B8B9BC);
+    background: var(--color-white, #FFF);
+
+    display: flex;
+
+    padding: 15px;
+}
+
+.workflowDetails {
+    width: 70%;
+}
+
+.field {
+    display: flex;
+}
+
+.label {
+    color: var(--color-black-borders, #B8B9BC);
+
+    /* Body/P2_Medium */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 20.8px */
+}
+
+.workflowWorkflow {
+    color: var(--color-black-heading, #060C1B);
+
+    /* Heading/H5 */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 25.2px */
+}
+
+.workflowDueDateText {
+    color: var(--color-error, #FF3D00);
+
+    /* Body/P2_Medium */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 20.8px */
+}
+
+.workflowStatus {
+    width: 30%;
+    text-align: end;
+    height: max-content;
+
+    display: inline-flex;
+    padding: 4px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.incompleteStatus {
+    border-radius: 4px;
+    border: 1px solid var(--color-error, #FF3D00);
+    background: var(--color-error-light, rgba(255, 61, 0, 0.10));
+}
+
+.lowRiskStatus {
+    border-radius: 4px;
+    border: 1px solid var(--color-success, #53D86A);
+    background: var(--color-success-light, #D7E5DA);
+}
+
+.needsReviewStatus {
+    border-radius: 4px;
+    border: 1px solid var(--color-black-borders, #B8B9BC);
+    background: var(--color-black-table, #ECECED);
+}

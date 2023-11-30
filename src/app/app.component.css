@@ -1,0 +1,11 @@
+.workflow-map {
+    display: flex;
+    flex-direction: row;
+
+    padding: 20px;
+}
+
+.workflows {
+    width: 35%;
+    
+}

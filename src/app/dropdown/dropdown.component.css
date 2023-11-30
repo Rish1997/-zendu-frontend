@@ -1,0 +1,10 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-button {
+    border-radius: 4px;
+    border: 1px solid var(--color-black-borders, #B8B9BC);
+    background: var(--color-white, #FFF);
+  }
